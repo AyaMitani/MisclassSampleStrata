@@ -1,7 +1,7 @@
 # MisclassSampleStrata
 R code and data to accompany manuscript titled "Survey design and analysis considerations when utilizing a misclassified sampling strata"
 
-
+/***
 \begin{table}[ht]
 \centering
 \begin{tabular}{llll}
@@ -27,3 +27,4 @@ patient.id & Patient ID & Numeric & 1 to 604 \\
    \hline
 \end{tabular}
 \end{table}
+***/

@@ -5,7 +5,7 @@ R code and data to accompany manuscript titled "Survey design and analysis consi
 
 ### Data file
 
-Data used for analysis ("analdata") in the manuscript is available either as a [data frame](AyaMitani/MisclassSurvey/analdata.txt) or [Rdata](MisclassSurvey/analdata.Rdata) format. To use data, 
+Data used for analysis ("analdata") in the manuscript is available either as a [data frame](analdata.txt) or [Rdata](analdata.Rdata) format. To use data, 
 ```
 analdata <- read.table("analdata.txt", header = TRUE)
 ```
@@ -14,7 +14,7 @@ or
 load("analdata.Rdata")
 ```
 
-Data dictionary can be found at MisclassSurvey_data_dictionary.pdf
+Data dictionary can be found [here](data_dictionary.md).
 
 ### R scripts
 

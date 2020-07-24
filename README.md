@@ -18,7 +18,7 @@ Data dictionary can be found [here](data_dictionary.md).
 
 ### R scripts
 
-
+- [Create Table 3](Create_Table_3.R)
 
 
 

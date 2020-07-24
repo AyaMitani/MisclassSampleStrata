@@ -5,7 +5,7 @@ R code and data to accompany manuscript titled "Survey design and analysis consi
 
 ### Data file
 
-Data used for analysis ("analdata") in the manuscript is available either as a [data frame](docs/analdata.txt) or [Rdata](docs/analdata.Rdata) format. To use data, 
+Data used for analysis ("analdata") in the manuscript is available either as a [data frame](MisclassSurvey/analdata.txt) or [Rdata](MisclassSurvey/analdata.Rdata) format. To use data, 
 ```
 analdata <- read.table("analdata.txt", header = TRUE)
 ```

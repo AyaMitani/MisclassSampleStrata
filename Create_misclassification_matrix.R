@@ -66,7 +66,7 @@ load("analdata.Rdata")
 # Overall misclassification matrix
 #------------------------------------------
 
-misclmat_npct(findata$e.race.eth.5, findata$s.race.eth.5, colp = 0)
+misclmat_npct(analdata$e.race.eth.5, analdata$s.race.eth.5, colp = 0)
 
 
 #-------------------------------------------
@@ -74,10 +74,10 @@ misclmat_npct(findata$e.race.eth.5, findata$s.race.eth.5, colp = 0)
 #-------------------------------------------
 
 ### Trust = 0
-trust0 <- subset(findata, findata$s.trust == 0)
+trust0 <- subset(analdata, analdata$s.trust == 0)
 misclmat_npct(trust0$e.race.eth.5, trust0$s.race.eth.5, colp = 0)
 
 ### Trust = 1
-trust1 <- subset(findata, findata$s.trust == 1)
+trust1 <- subset(analdata, analdata$s.trust == 1)
 misclmat_npct(trust1$e.race.eth.5, trust1$s.race.eth.5, colp = 0)
 

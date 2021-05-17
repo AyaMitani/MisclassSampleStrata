@@ -8,14 +8,14 @@ library(reshape2)
 library(ggplot2)
 library(ggthemes)
 library(xtable)
+library(here)
 
 
 #------------------------------
 # Load analytical data set
 #------------------------------
 
-setwd("") ### ENTER PATH HERE
-load("analdata.Rdata")
+findata <- read.table(here("findata.txt"), header = TRUE)
 
 
 #------------------------------
@@ -31,7 +31,6 @@ svyage <- as.matrix(table(findata$s.agege35))
 svyedu <- as.matrix(table(findata$edugrp))
 svyrace <- as.matrix(table(findata$s.race.eth.5))
 svyincome <- as.matrix(table(findata$income4level))
-svyreligious <- as.matrix(table(findata$s.religious))
 svyrural <- as.matrix(table(findata$s.rural))
 
 svyfreq <- rbind(svygender, svyage, svyrace, svyedu, svyrural, svyincome)
@@ -85,6 +84,9 @@ incomelab <- c("<30,000", "30,000 to 59,999", "60,000 to 149,999", "150,000+")
 rurallab <- c("Suburban/Urban", "Rural")
 labs <- c(genderlab, agelab, racelab, edulab, rurallab, incomelab)
 
-table1 <- xtable(cbind(labs, table1svy))
+table1 <- xtable(cbind(labs, table1svy, table1ehr))
 print.xtable(table1, include.rownames = FALSE)
+
+
+
 

@@ -7,7 +7,7 @@ R code and data to accompany manuscript titled "Survey design and analysis consi
 
 Data used for analysis ("findata") in the manuscript is available either as a [data frame](findata.txt). To use data, 
 ```
-analdata <- read.table("findata.txt", header = TRUE)
+findata <- read.table("findata.txt", header = TRUE)
 ```
 
 Data dictionary can be found [here](data_dictionary.md).
